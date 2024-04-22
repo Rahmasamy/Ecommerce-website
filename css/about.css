@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+    color: rgb(95, 15, 8);
+    font-size: 23px;
+ 
+}
+.layer .app li a {
+    padding: 5px !important;
+}
+.app__navbar {
+    width: 1140px;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 1rem 2rem;
+    background-color: transparent;
+    height: 50px;
+    position: relative;
+    z-index: 105;
+}
+.navbar__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.navbar__logo h3 {
+    font-size: 25px;
+}
+.navbar__logo img {
+    width: 40px;
+    height: 80px;
+    border-radius: 50%;
+}
+.app__navbar-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    color: white;
+}
+.app__navbar-links li {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+.app__navbar-links li:hover {
+    color: whitesmoke;
+}
+.navbar__navbar-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar__navbar-login a {
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+.navbar__navbar-login a:hover {
+    border-bottom: 1px solid var(--color-golden);
+}
+.span-ele {
+    color: var(--color-golden);
+    font-size: 30px;
+}
+.toggle {
+    width: 12px;
+    height: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    display: none;
+    
+
+}
+.app__navbar .toggle .d{
+    height: 5px;
+    width: 35px;
+    background-color: rgb(95, 15, 8);
+   
+    z-index: 30;
+    border-radius: 7px;
+}
+.layer {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(95, 15, 8, 0.548);
+    z-index: 102;
+    width: 0;
+    height: 0;
+    transition: 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    
+}
+
+.layer.tooglelayer{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
+    border-bottom-right-radius: 580px 580px;
+    
+}
+.layer .app li {
+    list-style: none;
+}
+.layer .app li a {
+    color: #fff;
+    padding: 20px;
+}
+.container {
+    padding: 35px 0px;
+    position: relative;
+    width: 100%;
+    height: 79vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@media screen and (max-width:2000px){
+    .navbar__logo img {
+       width: 210px;
+    }
+   }
+   @media screen and (max-width:650px){
+    .app__navbar {
+       padding: 1rem;
+    }
+    .navbar__navbar-login {
+       display: none;
+    }
+    .navbar__logo img {
+       width: 110px;
+    }
+   
+   }
+   
+   @media screen and (max-width:1150px){
+       .app__navbar-links {
+           display: none;
+       }
+       /* .navbar__smallscreen-smalldevice {
+           display: flex;
+       }
+        */
+   }
+.About-us {
+    width: 75%;
+    text-align: center;
+    padding: 1.7rem 1rem;
+    background-color: rgba(230, 216, 216, 0.689);
+    /* height: 400px; */
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.About-us .flower .left img{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.flower img {
+    width: 80px;
+    height: 80px;
+}
+.About-us .flower .right img {
+    position: absolute;
+    bottom:0;
+    right: 0;
+}
+.About-us h3 {
+   color: rgb(95, 15, 8);
+   text-transform: capitalize;
+   line-height: 1.5rem;
+   letter-spacing: 3px;
+   font-size: 30px;
+   padding: 10px;
+}
+.About-us .content {
+    width: 540px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+}
+.About-us .content p {
+    color: rgb(70, 67, 67);
+    padding: 15px;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    font-size: 15px;
+    font-weight: 500;
+}
+.About-us .image {
+    width: 700px;
+    height: 450px;
+    
+    
+}
+.About-us .image img{
+    
+    width: 700;
+    height: 450px;
+    max-width: 80%;
+    max-height: 80%;
+    margin-top: 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.About-us button {
+    padding: 15px;
+    color: aliceblue;
+    border-radius: 10px;
+    background-color: rgb(95, 15, 8);
+    font-family:'"Poppins", sans-serif';
+    margin-top: 15px;
+}
+@media screen and (max-width:1150px){
+    .About-us {
+        width: 75%;
+        flex-direction: column;
+        height: 700px;
+    }
+    .About-us .content{ 
+        width: 578px;
+        height: 530px;
+        flex-direction: column;
+     }
+     .About-us .image {
+        width:460px;
+     }
+     .About-us .image img{
+        width:310px;
+        border-radius: 50%;
+        height: 230px;
+      
+     }
+     .toggle {
+        display: flex;
+     }
+     .container {
+        height: 100vh;
+     }
+}
+@media screen and (max-width:730px){
+    .About-us {
+        width: 75%;
+        flex-direction: column;
+        height: 700px;
+    }
+    .About-us .content{ 
+        width: 348px;
+        height: 870px;
+        flex-direction: column;
+     }
+     .About-us .image {
+        width:460px;
+     }
+     .About-us .image img{
+        width:260px;
+        border-radius: 50%;
+        height: 200px;
+     }
+}
+@media screen and (max-width:400px){
+    .container {
+        padding: 40px 0px;
+    }
+    .About-us .content {
+        width: 270px;
+    }
+    .About-us .image {
+        width:190px;
+        height: 180px;
+     }
+    .About-us .image img {
+        width: 92px;
+        height: 121px;
+        object-fit: cover;
+    }
+
+    .About-us .content p {
+        padding: 25px;
+        font-size: 13px;
+        margin: 0 12px;
+    }
+}@media screen and (max-width:350px) {
+    .navbar__logo h3 {
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+    color: rgb(95, 15, 8);
+    font-size: 23px;
+ 
+}
+h1{
+    color: rgb(253, 253, 253);
+    text-align: center;
+    font-size: 37px;
+    text-shadow:  2px 2px 8px black ;
+}
+.layer .app li a {
+    padding: 5px !important;
+}
+.app__navbar {
+    width: 1140px;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 1rem 2rem;
+    background-color: transparent;
+    height: 50px;
+    position: relative;
+    z-index: 105;
+}
+.navbar__logo h3 {
+    font-size: 25px;
+}
+.navbar__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.navbar__logo img {
+    width: 40px;
+    height: 80px;
+    border-radius: 50%;
+}
+.app__navbar-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    color: white;
+}
+.app__navbar-links li {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+.app__navbar-links li:hover {
+    color: whitesmoke;
+}
+.navbar__navbar-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar__navbar-login a {
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+.navbar__navbar-login a:hover {
+    border-bottom: 1px solid var(--color-golden);
+}
+.span-ele {
+    color: var(--color-golden);
+    font-size: 30px;
+}
+.toggle {
+    cursor: pointer;
+    width: 12px;
+    height: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    display: none;
+   
+    
+
+}
+.app__navbar .toggle .d{
+    height: 5px;
+    width: 35px;
+    background-color: rgb(95, 15, 8);
+   
+    z-index: 30;
+    border-radius: 7px;
+}
+@media screen and (max-width:2000px){
+    .navbar__logo img {
+       width: 210px;
+    }
+   }
+   @media screen and (max-width:650px){
+    .app__navbar {
+       padding: 1rem;
+    }
+    .navbar__navbar-login {
+       display: none;
+    }
+    .navbar__logo img {
+       width: 110px;
+    }
+   
+   }
+   
+   @media screen and (max-width:1150px){
+       .app__navbar-links {
+           display: none;
+       }
+       /* .navbar__smallscreen-smalldevice {
+           display: flex;
+       }
+        */
+        .toggle {
+            display: flex;
+        }
+   }
+
+
+
+
+
+
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+}
+.layer {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(95, 15, 8, 0.548);
+    z-index: 102;
+    width: 0;
+    height: 0;
+    transition: 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    
+}
+
+.layer.tooglelayer{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
+    border-bottom-right-radius: 580px 580px;
+    
+}
+.layer .app li {
+    list-style: none;
+}
+.layer .app li a {
+    color: #fff;
+    padding: 20px;
+}
+.products .layer-product {
+    position: fixed;
+    z-index: 300;
+    background-color: rgba(80, 16, 10, 0.486);
+    width: 100%;
+    height: 121vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.products .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 100px 50px;
+    height: 600px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 85px;
+    height: 500px;
+  
+}
+
+.card h2 {
+    font-size: 20px;
+    margin: 0;
+    color: rgb(95, 15, 8);
+    text-align: center;
+}
+.card .divpara {
+    width: 290px;
+    transform: translateY(20px);
+    height: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card p {
+    margin: 10px  0;
+    height: 117px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.card img {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+}
+.pricecateogry {
+    display: flex;
+    justify-content: space-between;
+}
+.card button {
+    border-radius: 11px;
+    padding: 9px;
+    background-color: rgb(95, 15, 8);
+    color: #fff;
+    border: none;
+    outline: none;
+    /* position: absolute; */
+    /* bottom: 15px; */
+    /* left: 135px; */
+    width: 80%;
+    height: 29px;
+    cursor: pointer;
+    
+}
+.buttonscont {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 30px;
+    bottom: 25px;
+}
+.buttoncontainer {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.buttoncontainer2 {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.ImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 170px;
+
+
+}
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 400;
+    position: relative;
+    
+}
+.container2 .card {
+   position: absolute;
+   bottom: 1326px;
+    right: 486px;
+    transform: translate(-50%, -50%);
+}
+.xcontainer h3 {
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    font-size: 20px;
+    color: rgb(95, 15, 8) ; 
+    cursor: pointer;
+}
+.wishing-list {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.wishing-list img {
+    cursor: pointer;
+    position: fixed;
+    top:17px;
+    right: 20px;
+}
+.wishing-list-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.container-wish {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    right:0;
+    top: 0;
+    background-color: rgba(95, 15, 8, 0.548);
+    z-index: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+#wish > img {
+    position: fixed;
+    top:35px;
+    right: 20px;
+    height: 40px;
+    width: 35px;
+    cursor: pointer;
+
+}
+.container-wish .content {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.container-wish .content h2 {
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    line-height: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+.container-products-cart {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-direction: column;
+}
+.container-products-cart img {
+    /* display: none; */
+    border-radius: 50%;
+    width: 45px;
+    height: 40px;
+}
+.container-products-cart h3 {
+    font-size: 11px;
+    color: #fff;
+
+}
+table thead tr th{
+    color: #fff;
+    padding: 20px;
+}
+table {
+    color: #fff;
+}
+table tr td {
+    padding: 3px;
+}
+.clearAllProducts {
+    display: none;
+}
+.clearAllProducts button {
+    cursor: pointer;
+    padding: 6px !important;
+    color: #fff !important;
+    background-color: rgb(95, 15, 8) !important;
+    border: none !important;
+    outline: none !important;
+    font-size: 17px !important;
+    border-radius: 8px !important;
+    
+}
+@media screen and (max-width:470px) {
+    .wishing-list img { 
+        top:52px;
+    }
+    .container-wish {
+        width: 185px;
+    }
+    table thead tr th {
+        padding: 7px;
+    }
+    tbody tr {
+        padding-bottom: 20px;
+    }
+    #wish > img {
+        position: fixed;
+        top: 39px;
+        right: 20px;
+        height: 31px;
+        width: 35px;
+        cursor: pointer;
+    }
+
+}
+@media screen and (max-width:460px) {
+    .products .container {
+     padding: 100px 0;
+    }
+    .card {
+        padding: 17px;
+        width: 281px;
+    }
+    
+}
+
+@media screen and (max-width:350px) {
+    
+    .card {
+        padding: 17px;
+        width: 220px;
+    }
+    .card .divpara {
+        width: 220px;
+        transform: translateY(20px);
+        max-width: 220px;
+    }
+    .card p {
+        margin: 10px 0;
+        height: 156px;
+        text-align: center;
+        max-width: 203px;
+    }
+    .buttoncontainer {
+        width: 220px;
+        max-width: 220px;
+
+    }
+    .navbar__logo h3 {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width:270px){
+    .card p {
+        height: 235px;
+    } 
+    
+}
+@media screen and (max-width:355px) {
+    .buttonscont {
+        width: 225px;
+    }
+}

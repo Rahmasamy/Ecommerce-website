@@ -1,0 +1,88 @@
+.gal-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery {
+    position: relative;
+    width: 75%;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 900px;
+}
+.heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.gal-container h2 {
+   color: rgb(95, 15, 8);
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-weight: bold;
+   line-height: 1rem;
+   text-align: center;
+   font-size: 37px;
+}
+.gallery img {
+    width: 250px ;
+    height: 300px;
+    max-width: 250px;
+    object-fit: cover;
+   
+}
+.gallery .gal {
+ width: 250px ;
+ height: 300px;
+ max-width: 250px;
+ /* transition-delay: 0.5s; */
+ position: absolute;
+ opacity: 0; /* Initially hide the div */
+ transition: opacity 1s ease-in-out; /* Apply transition effect */
+}
+.gallery .gal.show {
+    opacity: 1;
+}
+.gallery .gal:nth-child(1) {
+    transform: rotate(40deg);
+   
+   
+   
+}  
+.gallery .gal:nth-child(2) {
+    transform: rotate(35deg);
+    transition: 0.5s ease all;
+}  
+
+.gallery .gal:nth-child(3) {
+    transform: rotate(30deg);
+    transition: 0.7s ease all;
+}  
+
+.gallery .gal:nth-child(4) {
+    transform: rotate(25deg);
+    transition: 0.9s ease all;
+}  
+
+.gallery .gal:nth-child(5) {
+    transform: rotate(25deg);
+    transition: 1.1s ease all;
+}  
+
+.gallery .gal:nth-child(6) {
+    transform: rotate(20deg);
+    transition: 1.3s ease all;
+}  
+.gallery .gal:nth-child(7) {
+    transform: rotate(15deg);
+    transition: 1.5s ease all;
+}  
+.gallery .gal:nth-child(8) {
+    transform: rotate(10deg);
+    transition: 1.5s ease all;
+}  
